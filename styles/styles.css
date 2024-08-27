@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+:root {
+
+    --color-primario: #FCF5ED;
+    --color-secundario: #F4BF96;
+    --color-terciario: #CE5A67;
+    --color-hover: #1F1717;
+
+    --fuente-dosis: "Dosis", sans-serif;
+}
+
+* {
+    /*
+    padding: 10px 25px 0px 10px;   se etiqueta para probar nuevas margenes
+    margin:0;
+    */
+
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-primario);
+    font-family: var(--fuente-dosis);
+    color: var(--color-hover);
+    
+}
+
+header {
+    padding: 2%;
+}
+
+.encriptador { 
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    /*gap: 50px;*/
+    /*padding: 10px 25px 0px 205px;  se comenta para probaar nuevas margenes  */
+
+    padding-left: 10%;
+
+}
+
+.caja_inicial_texto{
+
+    /*padding-right: 20%;*/
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    height: 100%;
+    width: 50%;
+    
+}
+
+.encriptador_entrada {
+
+    border: none;
+    resize: none;
+    outline: none;
+    color: var(--color-hover);
+    text-transform: lowercase;
+    font-size: 1.5rem;
+    
+    /*
+    border: none;
+    color:;
+    margin-top:90px;
+    outline: none;
+    */
+}
+
+.advertencia { 
+    padding-bottom: 25px;
+    background-image: url("/assets/Frame\ 1.png");
+    background-repeat: no-repeat;
+}
+
+.boton_encriptar {
+    background-color: var(--color-secundario);
+    border: solid;
+    border-color: var(--color-secundario);
+    width: 50%;
+    height: 50px;
+    border-radius: 18px;
+    text-align: center;
+    cursor: pointer;
+    
+    font-size: 1.5rem;
+}
+
+.boton_encriptar:hover {
+    background-color: var(--color-terciario);
+}
+
+.boton_descriptar {
+    background-color: var(--color-terciario);
+    border: solid;
+    border-color: var(--color-terciario);
+    width: 49%;
+    height: 50px;
+    border-radius: 18px;
+    text-align: center;
+    cursor: pointer;
+    
+    font-size: 1.5rem;
+}
+
+.boton_descriptar:hover {
+    background-color: var(--color-secundario);
+}
+
+.copiar {
+    background-color: var(--color-secundario);
+    border: solid;
+    border-color: var(--color-secundario);
+    width: 49%;
+    height: 50px;
+    border-radius: 18px;
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+
+    font-size: 1.5rem;
+}
+
+.copiar:hover {
+    background-color: var(--color-terciario);
+}
+
+.caja_resultado_texto {
+
+    /*
+    height: 500px;
+    width: 300px;
+    border-radius: 18px;
+    background-color: #555;
+    --
+
+    position: relative;
+    border-radius: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    height: 80vh;
+    background-color: white;
+    padding: 0px 0px 0px 0px;
+    z-index: 1;
+    */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 5%;
+    
+}
+
+
+.encriptador_salida{
+
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    width: 100%;
+    height: 355px;
+    position: relative;
+    box-sizing: border-box;
+    align-items: center;
+
+    outline: none;
+    resize: none;
+
+    background-image: url("/assets/Muñeco.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 80%;
+    padding-top: 10px;
+    box-shadow: 10px 10px 5px #CE5A67;
+
+    border: none;
+
+    text-align: center;
+    color: var(--color-hover);
+    font-size: 1.5rem;
+    
+
+
+    /*
+    z-index: 1;
+    z-index: -1;
+    background-color: white;
+
+        --
+    z-index: 1;
+    
+    background-color: #FFFFFF;
+    font-size: 2rem;
+    font-family: Inter, sans-serif;
+    font-weight: 500;
+    color: #495057;
+    text-align: center;
+    */
+}
+
+#text2 { 
+    color: var(--color-hover);
+    text-align: center;
+    padding: 10px 50px 20px 45px;
+}
+
+.footer {
+    padding-top: 5%;
+    text-align: center;
+    color: var(--color-hover);
+    font-size: 1.5rem;
+}
+
+
+@media (max-width: 768px) {
+
+
+    .caja_inicial_texto {
+        justify-content: right;
+    }
+
+    .encriptador {
+
+        flex-direction: column;
+        padding-left: 0%;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        gap: 50px;
+
+
+    }
+
+    .encriptador_entrada {
+        width: 250%;
+    }
+
+    .encriptador_salida {
+        background-image: none;
+        width: 150%;
+    }
+
+    .footer {
+        text-align: center;
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 376px) {
+
+    .encriptador {
+
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .boton_encriptar {
+        gap: 40px;
+        width: 100%;
+        height: 50px;
+    }
+
+    .boton_descriptar {
+
+        width: 100%;
+        height: 50px;
+        
+    }
+
+    .botones_encriptador {
+
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .encriptador_salida {
+
+        background-image: none;
+        width: 100%;
+        flex-direction: left;
+        text-align: left;
+    }
+}
