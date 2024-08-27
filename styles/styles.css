@@ -60,13 +60,7 @@ header {
     color: var(--color-hover);
     text-transform: lowercase;
     font-size: 1.5rem;
-    
-    /*
-    border: none;
-    color:;
-    margin-top:90px;
-    outline: none;
-    */
+
 }
 
 .advertencia { 
@@ -128,24 +122,6 @@ header {
 }
 
 .caja_resultado_texto {
-
-    /*
-    height: 500px;
-    width: 300px;
-    border-radius: 18px;
-    background-color: #555;
-    --
-
-    position: relative;
-    border-radius: 18px;
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-    height: 80vh;
-    background-color: white;
-    padding: 0px 0px 0px 0px;
-    z-index: 1;
-    */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -179,24 +155,6 @@ header {
     text-align: center;
     color: var(--color-hover);
     font-size: 1.5rem;
-    
-
-
-    /*
-    z-index: 1;
-    z-index: -1;
-    background-color: white;
-
-        --
-    z-index: 1;
-    
-    background-color: #FFFFFF;
-    font-size: 2rem;
-    font-family: Inter, sans-serif;
-    font-weight: 500;
-    color: #495057;
-    text-align: center;
-    */
 }
 
 #text2 { 
